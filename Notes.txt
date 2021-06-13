@@ -1,0 +1,66 @@
+
+web app: static, dynamic
+architecture types
+responsive web design: how can we achieve
+difference between js & ts
+tools: npm, babel, webpack, angular cli
+
+js: object oriented javascript, browser object model, document object model, events, regular expressions, exception handling, libraries
+web workers: achieve max speed possible on the web platform with web workers
+server side rendering: make the resources ready on server side before serving to client
+
+
+
+* install typescript
+- npm install typescript -g
+
+* install angular
+- npm install -g @angular/cli@8.3.20 
+- npm uninstall -g @angular/cli
+
+* create ng
+- ng new {Project Name}
+
+* create component
+- ng g c slider
+
+* serve
+- ng serve -o
+
+* angular project structure
+- /e2e (for testing)
+- /node_modules (dependencies)
+- /src (application source code)
+- editorconfig (vscode related config)
+- .gitignore (git related config)
+- angular.json (project related config)
+- browserslist (popular browsers)
+- karma.conf.json (unit testing)
+- package-lock.json (dependencies config @ specific version)
+- package.json (dependencies config @ min version req)
+
+* src
+- /app 
+- index.html (entry point)
+- main.ts (config)
+- polyfills.ts (few lines of code which make your app compatible for different browsers)
+- styles.css (global css) //global, page specific, component specific
+
+* app
+- app-routing.module.ts (routing logic)
+- app.component.css (component css)
+- app.component.html (component frontend)
+- app.component.spec.ts (component test)
+- app.component.ts (component logic)
+- app.module.ts (root module)
+
+* assignment: share on github pages
+- build small app using bootstrap 5.x
+- 5 pages
+- Header: logo | About | Contact
+- Content: 
+- Footer: logo | About | Contact | Social media links
+- 
+
+
+

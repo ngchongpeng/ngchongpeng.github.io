@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Min One', 'Overpass', 'Arial Narrow';
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1000px;
+  margin:auto;
+  border: 1px solid #ccc;
+}
+
+.flex {
+  display: flex;
+}
+
+.border-left {
+  border-left: 1px solid #ccc;
+}
+
+.border-top {
+  border-top: 1px solid #ccc;
+}
+
+.border-right {
+  border-right: 1px solid #ccc;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+.flex-7 {
+  flex: 7;
+}
+
+.flex-8 {
+  flex: 8;
+}
+
+.flex-9 {
+  flex: 9;
+}
+
+.flex-10 {
+  flex: 10;
+}
+
+.flex-11 {
+  flex: 11;
+}
+
+.flex-12 {
+  flex: 12;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}

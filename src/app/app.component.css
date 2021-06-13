@@ -1,0 +1,15 @@
+
+/* list item */
+li {
+    list-style: none;
+}
+
+/* logo */
+.logo img {
+    width: 50px;
+    text-align: center;
+}
+
+footer div {
+    flex: 1;
+}
