@@ -1,11 +1,11 @@
-<!-- header -->
-<header class="lvl_1 flex border-bottom">
-  <div class="logo">
-    <img
-      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-  </div>
-  <nav>
-    <div class="menu">
+<header>
+  <!-- topMenu -->
+  <div class="topMenu flex">
+    <div class="logo f1">
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    </div>
+    <nav class="f11">
       <ul class="flex">
         <li>
           <a routerLink="/about" routerLinkActive="active">About</a>
@@ -14,43 +14,33 @@
           <a routerLink="/contact" routerLinkActive="active">Contact</a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
+
+  <!-- slider -->
+  <div class="slider">
+    <app-slider></app-slider>
+  </div>
 </header>
 
-<!-- slider -->
-<div class="slider border-bottom">
-  <app-slider></app-slider>
-</div>
 
 <!-- content -->
-<div class="content border-bottom">
+<div class="main" style="margin-top: 10px;">
   <router-outlet></router-outlet>
 </div>
 
-<!-- footer -->
-<footer class="flex border-bottom">
-  <div class="logo border-right">
-    <img
-      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-  </div>
-  <div class="menu border-right">
-    <ul>
+
+<footer class="bT" style="margin-top: 10px;">
+  <div class="links">
+    <ul class="flex wrap">
       <li>
         <a routerLink="/about" routerLinkActive="active">About</a>
       </li>
       <li>
         <a routerLink="/contact" routerLinkActive="active">Contact</a>
       </li>
-    </ul>
-  </div>
-  <div class="links">
-    <ul>
       <li>
-        <a routerLink="/history" routerLinkActive="active">History</a>
-      </li>
-      <li>
-        <a routerLink="/history-details" routerLinkActive="active">History Details</a>
+        <a routerLink="/history" routerLinkActive="active">Angular versions</a>
       </li>
       <li>
         <a routerLink="/map" routerLinkActive="active">Map</a>

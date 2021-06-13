@@ -1,88 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
 * {
   font-family: 'Min One', 'Overpass', 'Arial Narrow';
-  font-size: 25px;
-  box-sizing: border-box;
 }
 
-html {
-  max-width: 1000px;
-  margin:auto;
-  border: 1px solid #ccc;
+body {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+li {
+  list-style: none;
 }
 
 .flex {
   display: flex;
+  gap: 5px;
 }
-
-.border-left {
-  border-left: 1px solid #ccc;
+.wrap {
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.border-top {
-  border-top: 1px solid #ccc;
-}
-
-.border-right {
-  border-right: 1px solid #ccc;
-}
-
-.border-bottom {
-  border-bottom: 1px solid #ccc;
-}
-
-.flex-1 {
+.f1 {
   flex: 1;
 }
-
-.flex-2 {
+.f2 {
   flex: 2;
 }
-
-.flex-3 {
+.f3 {
   flex: 3;
 }
-
-.flex-4 {
+.f4 {
   flex: 4;
 }
-
-.flex-5 {
+.f5 {
   flex: 5;
 }
-
-.flex-6 {
+.f6 {
   flex: 6;
 }
-
-.flex-7 {
+.f7 {
   flex: 7;
 }
-
-.flex-8 {
+.f8 {
   flex: 8;
 }
-
-.flex-9 {
+.f9 {
   flex: 9;
 }
-
-.flex-10 {
+.f10 {
   flex: 10;
 }
-
-.flex-11 {
+.f11 {
   flex: 11;
 }
-
-.flex-12 {
+.f12 {
   flex: 12;
 }
 
-.text-center {
+.bL {
+  border-left: 1px solid #ccc;
+}
+.bT {
+  border-top: 1px solid #ccc;
+}
+.bR {
+  border-right: 1px solid #ccc;
+}
+.bB {
+  border-bottom: 1px solid #ccc;
+}
+
+.title {
   text-align: center;
 }
 
-.justify-content-center {
-  justify-content: center;
+.card {
+  text-align: center;
 }

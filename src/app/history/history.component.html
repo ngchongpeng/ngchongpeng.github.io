@@ -1,193 +1,390 @@
-<div>
-    <h3>Angular version history</h3>
-   
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng1)">Angular js 1.x</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng2)">Angular 2</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng3)">Angular 3</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng4)">Angular 4</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng5)">Angular 5</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng6)">Angular 6</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng7)">Angular 7</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng8)">Angular 8</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng9)">Angular 9</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng10)">Angular 10</button>
-    <button class="btn btn-lg btn-outline-primary" (click)="open(ng11)">Angular 11</button>
+<h3 class="title bB">Angular versions</h3>
 
-    <ng-template #ng1 let-modal>
+<div class="content flex wrap">
+  <!-- cards -->
+  <div class="card">
+    <h5 class="card-header">AngularJS</h5>
+    <div class="card-body">
+      <p class="card-text">Oct 2010</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod1">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 2</h5>
+    <div class="card-body">
+      <p class="card-text">Mar 2014</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod2">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 3</h5>
+    <div class="card-body">
+      <p class="card-text">Not released</p>
+      <!-- <a href="#" class="btn btn-primary">Features</a> -->
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 4</h5>
+    <div class="card-body">
+      <p class="card-text">Sep 2016</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod4">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 5</h5>
+    <div class="card-body">
+      <p class="card-text">Nov 2017</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod5">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 6</h5>
+    <div class="card-body">
+      <p class="card-text">May 2018</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod6">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 7</h5>
+    <div class="card-body">
+      <p class="card-text">Oct 2018</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod7">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 8</h5>
+    <div class="card-body">
+      <p class="card-text">May 2019</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod8">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 9</h5>
+    <div class="card-body">
+      <p class="card-text">Feb 2020</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod9">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 10</h5>
+    <div class="card-body">
+      <p class="card-text">Jun 2020</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod10">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 11</h5>
+    <div class="card-body">
+      <p class="card-text">Nov 2020</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod11">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">Angular 12</h5>
+    <div class="card-body">
+      <p class="card-text">May 2021</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mod12">
+        Features
+      </button>
+    </div>
+  </div>
+
+  <!-- modals -->
+  <div class="modal fade" id="mod1">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular js 1.x</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">AngularJS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- Uses JavaScript; hence easy to learn
+          <br>- Two-way data binding
+          <br>- Fast development for small applications
+
+          <br><br>* Disadvantages
+          <br>No dynamic loading
+          <br>No cli
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng2 let-modal>
+  <div class="modal fade" id="mod2">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 2</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- Client tool for expedited development
+          <br>- Component decorators
+          <br>- Event bindings
+
+          <br><br>* Disadvantages
+          <br>Code base overhauled as compared to that of AngularJS. Hence AngularJS users had to relearn syntax
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng3 let-modal>
+  <div class="modal fade" id="mod4">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 3</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 4</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- HttpClient
+          <br>- New router lifecycle events
+          <br>- Conditionally disable animations
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng4 let-modal>
+  <div class="modal fade" id="mod5">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 4</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 5</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- Support for PWAs
+          <br>- Build optimizer
+          <br>- Improvements related to material design
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng5 let-modal>
+  <div class="modal fade" id="mod6">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 5</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 6</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- Toolchain improvements
+          <br>- Introduction of angular elements
+          <br>- Introduction of angular material with cdk
+          <br>- Library support
+          <br>- Starter components
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng6 let-modal>
+  <div class="modal fade" id="mod7">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 6</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 7</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- App performance improvements
+          <br>- Angular material + cdk updates
+          <br>- Virtual scrolling
+          <br>- Content projection support
+          <br>- Dependency updates
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng7 let-modal>
+  <div class="modal fade" id="mod8">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 7</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 8</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- Differential loadings for all app code
+          <br>- Dynamic imports for lazy routes
+          <br>- Introduction of web workers
+          <br>- Typescript 3.4 support
+          <br>- Opt in preview of angular ivy
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng8 let-modal>
+  <div class="modal fade" id="mod9">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 8</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 9</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- Moved all applications to ivy compiler & runtime
+          <br>- Smaller bundle size
+          <br>- Faster testing
+          <br>- Better debugging
+          <br>- Improved css class & style binding
+          <br>- Improved type checking
+          <br>- Improved build error handling
+          <br>- Improved build times
+          <br>- Improved internationalization
+          <br>- Compatible with typescript 3.6 & 3.7
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng9 let-modal>
+  <div class="modal fade" id="mod10">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 9</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 10</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- New date range picker
+          <br>- Warning about commonjs imports
+          <br>- Optional stricter settings
+          <br>- Updates to dependencies
+          <br>- New default browser configuration
+          <br>- Deprecations & removals
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng10 let-modal>
+  <div class="modal fade" id="mod11">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 10</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 11</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- Automatic inlining of fonts
+          <br>- Component test harnesses for all components
+          <br>- Improved reporting & logging
+          <br>- Updated language service preview
+          <br>- Updated hot module replacement support
+          <br>- Faster builds
+          <br>- Experimental webpack 5 support
+          <br>- Linting updates
+          <br>- Removal of support for ie9/10/mobile
+          <br>- Deprecations & removals
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
+      </div>
+    </div>
+  </div>
 
-      <ng-template #ng11 let-modal>
+  <div class="modal fade" id="mod12">
+    <div class="modal-dialog">
+      <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Angular 11</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-          </button>
+          <h5 class="modal-title" id="exampleModalLabel">Angular 12</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Release date:
-          Features:
+          * Advantages
+          <br>- Deprecation of view engine
+          <br>- Transition from legacy i18m message ids
+          <br>- Support for nullish coalescing operator in typescript
+          <br>- Styling improvements
+          <br>- Ng build defaults to production mode unless otherwise specified
+          <br>- Strict mode enabled by default in cli
+          <br>- Ivy-based language service enabled by default
+          <br>- Webpack 5 support released prodution-ready
+          <br>- Support for typescript 4.2 added
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
-      </ng-template>
-
-
+      </div>
+    </div>
+  </div>
 </div>
