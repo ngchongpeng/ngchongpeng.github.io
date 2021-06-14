@@ -10,6 +10,8 @@ import { HistoryComponent } from './history/history.component';
 import { MapComponent } from './map/map.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     ContactComponent,
     HistoryComponent,
-    MapComponent
+    MapComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
