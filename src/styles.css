@@ -1,12 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: local('IBM Plex Sans Condensed'), url(./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Regular.ttf) format('truetype');
+}
+
 * {
-  font-family: 'Min One', 'Overpass', 'Arial Narrow';
+  font-family: 'IBM Plex Sans Condensed';
 }
 
 body {
   padding-left: 20%;
   padding-right: 20%;
 }
+
+ul {
+  padding-left: 0 !important;
+}
+
 li {
   list-style: none;
 }
@@ -15,43 +25,56 @@ li {
   display: flex;
   gap: 5px;
 }
+
 .wrap {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .f1 {
   flex: 1;
 }
+
 .f2 {
   flex: 2;
 }
+
 .f3 {
   flex: 3;
 }
+
 .f4 {
   flex: 4;
 }
+
 .f5 {
   flex: 5;
 }
+
 .f6 {
   flex: 6;
 }
+
 .f7 {
   flex: 7;
 }
+
 .f8 {
   flex: 8;
 }
+
 .f9 {
   flex: 9;
 }
+
 .f10 {
   flex: 10;
 }
+
 .f11 {
   flex: 11;
 }
+
 .f12 {
   flex: 12;
 }
@@ -59,18 +82,26 @@ li {
 .bL {
   border-left: 1px solid #ccc;
 }
+
 .bT {
   border-top: 1px solid #ccc;
 }
+
 .bR {
   border-right: 1px solid #ccc;
 }
+
 .bB {
   border-bottom: 1px solid #ccc;
 }
 
 .title {
   text-align: center;
+}
+
+.content {
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .card {
