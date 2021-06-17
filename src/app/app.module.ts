@@ -13,6 +13,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { UsersComponent } from './users/users.component';
+import { CourseComponent } from './course/course.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
+import { InsightsComponent } from './assignments/insights/insights.component';
+import { InsightsTitleComponent } from './assignments/insights/insights-title/insights-title.component';
+import { InsightsBodyComponent } from './assignments/insights/insights-body/insights-body.component';
+import { InsightsPeopleComponent } from './assignments/insights/insights-people/insights-people.component';
+import { InsightsTopicComponent } from './assignments/insights/insights-topic/insights-topic.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +31,14 @@ import { UsersComponent } from './users/users.component';
     MapComponent,
     HeaderComponent,
     FooterComponent,
-    UsersComponent
+    UsersComponent,
+    CourseComponent,
+    AssignmentsComponent,
+    InsightsComponent,
+    InsightsTitleComponent,
+    InsightsBodyComponent,
+    InsightsPeopleComponent,
+    InsightsTopicComponent
   ],
   imports: [
     BrowserModule,

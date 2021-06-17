@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-insights-title [content]="data.title"></app-insights-title>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <app-insights-body [content]="data.body"></app-insights-body>
+        </div>
+        <div class="col-md-3">
+            <div>
+                <h4>About the Authors</h4>
+                <app-insights-people *ngFor="let person of data.authors" [person]="person"></app-insights-people>
+            </div>
+            <div>
+                <h4>Contributors</h4>
+                <app-insights-people *ngFor="let person of data.contributors" [person]="person"></app-insights-people>
+            </div>
+            <div>
+                <h4>MORE ON THIS TOPIC</h4>
+                <app-insights-topic *ngFor="let topic of data.topics" [topic]="topic"></app-insights-topic>
+            </div>
+        </div>
+    </div>
+</div>
